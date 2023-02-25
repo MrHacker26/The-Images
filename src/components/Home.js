@@ -18,6 +18,7 @@ function Home() {
         // console.log(data);
         setImages(data);
       } else {
+        setLoading(true);
         const response = await axios.get(
           `https://api.unsplash.com/search/photos?page=15&query=${query}`,
           {
@@ -41,6 +42,7 @@ function Home() {
     async function fetchData() {
       setLoading(true);
       try {
+        setLoading(true);
         const res = await axios.get(`https://api.unsplash.com/photos?`, {
           headers: {
             Authorization:

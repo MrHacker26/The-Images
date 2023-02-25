@@ -41,12 +41,6 @@ function SearchBar({ onSearch }) {
               onChange={handleType}
               className="h-12 px-9 md:w-[900px] py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent dark:text-black"
             />
-            <button
-              type="submit"
-              className=" hidden bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-r-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"
-            >
-              Search
-            </button>
           </form>
         </header>
       </div>

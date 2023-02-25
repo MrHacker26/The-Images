@@ -4,7 +4,7 @@ import { AiOutlineLike } from "react-icons/ai";
 
 function ImageList({ images, onImageClick }) {
   return (
-    <div className="grid md:grid-cols-3 gap-4 " data-aos="fade-up">
+    <div className="grid md:grid-cols-3 gap-4 ">
       {images.map((image) => (
         <div
           key={image.id}
