@@ -11,7 +11,6 @@ function SearchBar({ onSearch }) {
   };
   const handleSearch = (e) => {
     e.preventDefault();
-
     onSearch(query);
   };
 
@@ -24,7 +23,7 @@ function SearchBar({ onSearch }) {
         backgroundSize: "cover",
       }}
     >
-      <div className="bg-black/50 w-full h-full grid place-content-center">
+      <div className="bg-black/50 w-full h-full grid place-content-center rounded-lg">
         <header className="flex justify-between my-6 ">
           <form onSubmit={handleSearch}>
             <label
